@@ -28,18 +28,12 @@
       "details": "some more details will be here, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
     },
     {
-      "score": "hfghfg",
-      "name": "hfgh",
-      "address": "hfgh",
-      "age": "fghfgh",
+      "score": "9.44",
+      "name": "Pravin Lele",
+      "address": "Temp address details",
+      "age": "23",
+      "details": "temp details",
       "id": 264
-    },
-    {
-      "score": "fghfghfg",
-      "name": "hgfhfgh",
-      "address": "gfgfdg",
-      "age": "fghfgh",
-      "id": 265
     }
   ]
 }
