@@ -27,7 +27,8 @@ export class AddStduentComponent implements OnInit {
       'score': ['', Validators.required],
       'name': ['', Validators.required],
       'address': ['', Validators.required],
-      'age': ['', Validators.required]
+      'age': ['', Validators.required],
+      'details': ['', Validators.required]
     });
   }
 

@@ -42,6 +42,16 @@
         </div>
 
         <div class="form-element">
+            <mat-form-field appearance="outline">
+                <mat-label>Details</mat-label>
+                <input matInput placeholder="Details" type="text" id="details" name="details" formControlName="details">
+            </mat-form-field>
+            <mat-error *ngIf="(stduentForm?.controls?.details?.dirty || stduentForm?.controls?.details?.touched)">
+                <small *ngIf="stduentForm?.controls?.details?.errors?.required">Required</small>
+            </mat-error>
+        </div>
+
+        <div class="form-element">
             <button mat-raised-button color="primary" [disabled]="!stduentForm.valid" type="submit" class="button">Save</button>
         </div>
 
