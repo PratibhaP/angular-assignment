@@ -1,0 +1,49 @@
+<div class="container">
+    <form [formGroup]="stduentForm" (ngSubmit)="onSubmit(stduentForm.value)" class="form" novalidate>
+        <h2>Add Stduent Information</h2>
+        <div class="form-element">
+            <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Name" type="text" id="name" name="name" formControlName="name">
+            </mat-form-field>
+            <mat-error *ngIf="(stduentForm?.controls?.name?.dirty || stduentForm?.controls?.name?.touched)">
+                <small *ngIf="stduentForm?.controls?.name?.errors?.required">Required</small>
+            </mat-error>
+        </div>
+
+        <div class="form-element">
+            <mat-form-field appearance="outline">
+                <mat-label>Age</mat-label>
+                <input matInput placeholder="Age" type="text" id="age" name="age" formControlName="age">
+            </mat-form-field>
+            <mat-error *ngIf="(stduentForm?.controls?.age?.dirty || stduentForm?.controls?.age?.touched)">
+                <small *ngIf="stduentForm?.controls?.age?.errors?.required">Required</small>
+            </mat-error>
+        </div>
+
+        <div class="form-element">
+            <mat-form-field appearance="outline">
+                <mat-label>Score</mat-label>
+                <input matInput placeholder="Score" type="text" id="score" name="score" formControlName="score">
+            </mat-form-field>
+            <mat-error *ngIf="(stduentForm?.controls?.score?.dirty || stduentForm?.controls?.score?.touched)">
+                <small *ngIf="stduentForm?.controls?.score?.errors?.required">Required</small>
+            </mat-error>
+        </div>
+
+        <div class="form-element">
+            <mat-form-field appearance="outline">
+                <mat-label>Address</mat-label>
+                <input matInput placeholder="Address" type="text" id="address" name="address" formControlName="address">
+            </mat-form-field>
+            <mat-error *ngIf="(stduentForm?.controls?.address?.dirty || stduentForm?.controls?.address?.touched)">
+                <small *ngIf="stduentForm?.controls?.address?.errors?.required">Required</small>
+            </mat-error>
+        </div>
+
+        <div class="form-element">
+            <button mat-raised-button color="primary" [disabled]="!stduentForm.valid" type="submit" class="button">Save</button>
+        </div>
+
+    </form>
+</div>
