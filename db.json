@@ -1,0 +1,45 @@
+{
+  "students": [
+    {
+      "id": 231,
+      "name": "Mayur Atre ",
+      "age": 21,
+      "score": 9.69,
+      "address": "Temp Address",
+      "isExpanded": false,
+      "details": "some more details will be here, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    },
+    {
+      "id": 245,
+      "name": "Sudhir Panchmukh",
+      "age": 20,
+      "score": 9.59,
+      "address": "Temp Address",
+      "isExpanded": false,
+      "details": "some more details will be here, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    },
+    {
+      "id": 263,
+      "name": "Sarla Panchmukh",
+      "age": 21,
+      "score": 6.69,
+      "address": "Temp Address",
+      "isExpanded": false,
+      "details": "some more details will be here, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    },
+    {
+      "score": "hfghfg",
+      "name": "hfgh",
+      "address": "hfgh",
+      "age": "fghfgh",
+      "id": 264
+    },
+    {
+      "score": "fghfghfg",
+      "name": "hgfhfgh",
+      "address": "gfgfdg",
+      "age": "fghfgh",
+      "id": 265
+    }
+  ]
+}
