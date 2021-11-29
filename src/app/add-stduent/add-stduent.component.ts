@@ -10,7 +10,6 @@ import { Router } from "@angular/router";
 })
 export class AddStduentComponent implements OnInit {
 
-
   stduentForm!: FormGroup;
   titleAlert: string = 'This field is required';
   post: any = '';
@@ -35,14 +34,14 @@ export class AddStduentComponent implements OnInit {
 
   onSubmit(post:any) {
     if (this.stduentForm.valid) {
-      this.restService.createStudent(this.stduentForm.value).subscribe({
-          next: (response: any) => {
-            this.router.navigate(["students"]);          },
-          error: (error: any) => {
-            console.error(error)
-          },
-      });
-  }
+      this.restService.createStudent(this.stduentForm.value).subscribe(
+        (response:any)=>
+        {
+          this.router.navigate(["students"]);    
+        },
+        (error:any) => console.error(error)
+      )
+    }
   }
 
 }

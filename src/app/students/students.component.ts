@@ -29,12 +29,12 @@ export class StudentsComponent {
 
   ngOnInit(): void {
     this.restService.getUsers().subscribe(
-      (response)=>
+      (response:any)=>
       {
         this.studentData = response;
         this.dataStudentsList.data = response;
       },
-      (error) => console.log(error)
+      (error:any) => console.error(error)
     )
   }
 
